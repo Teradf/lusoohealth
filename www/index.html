@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/dados.js"></script>
+</head>
+
+<body>
+    <form action="post" name="form" action="/info">
+        <div class="oustide-container">
+            <div class="title-line">
+                <p>Price Simulation Publicity</p>
+                <figure>
+                    <a href="https://www.unifetv.pt/" target="_blank"><img src="images/Logo.svg" alt="Logótipo"></a>
+                </figure>
+            </div>
+            <div id="lista">
+                <div class="dropdowns">
+                    <div>
+                        <label for="dias-semana">Day</label>
+                        <div class="custom-select">
+                            <select name="dias-semana" id="dias-semana" class="dias-semana" required>
+                                <option value="" hidden disabled selected></option>
+                                <option value="segunda-sexta">SEGUNDA A SEXTA</option>
+                                <option value="fim-de-semana">FIM DE SEMANA</option>
+                            </select>
+                            <span class="custom-arrow"><img class="arrow" src="images/DropDownMenu.svg"
+                                    alt="DropDown Arrow"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="horas">Hours</label>
+                        <div class="custom-select">
+                            <select name="horas" id="horas" class="horas" required>
+                                <option value="" hidden disabled selected></option>
+                            </select>
+                            <span class="custom-arrow"><img class="arrow" src="images/DropDownMenu.svg"
+                                    alt="DropDown Arrow"></span> 
+                        </div>
+                    </div>
+                    <div>
+                        <label for="tempo">Time</label>
+                        <div class="custom-select">
+                            <select name="tempo" id="tempo" required>
+                                <option value="" hidden disabled selected></option>
+                            </select>
+                            <span class="custom-arrow"><img src="images/DropDownMenu.svg" alt="DropDown Arrow"></span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="quantidade">Quantity</label>
+                        <input class="quantidades" type="number" min="1" max="999" required/>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div id="manage-options">
+                <figure class="opcoes">
+                    <img id="add" src="images/+.svg" alt="Add">
+                    <img id="add-hover" src="images/+_Houver.svg" alt="Add">
+                </figure>
+                <img id="line" src="images/Line.svg" alt="">
+                <figure class="opcoes">
+                    <img id="remove" src="images/-.svg" alt="Remove">
+                    <img id="remove-hover" src="images/-_Houver.svg" alt="Remove">
+                </figure>
+            </div>
+        </div>
+        <div class="oustide-container">
+            <div class="title-line">
+                <p>Result</p>
+            </div>
+            <div id="fields">
+                <div id="price-taxes">
+                    <div>
+                        <label id="price-label" for="price">Price(€)</label>
+                        <input id="price" disabled readonly type="text" value="" />
+                    </div>
+                    <div>
+                        <label id="tax-label" for="tax">Tax (23%)</label>
+                        <input id="tax" disabled readonly type="text" value="" />
+                    </div>
+                    <div>
+                        <label id="ipaca-label" for="ipaca">IPACA (4%)</label>
+                        <input id="ipaca" disabled readonly type="text" value="" />
+                    </div>
+                </div>
+                <div id="last-row">
+                    <div id="finprice-div">
+                        <label id="finprice-label" for="finprice">Final Price(€)</label>
+                        <input id="finprice" disabled readonly type="text" value="" />
+                    </div>
+                    <div id="buttons">
+                        <input id="btnReset" type="reset" value="RESET" />
+                        <input id="btnSubmit" type="submit" value="SIMULATE" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

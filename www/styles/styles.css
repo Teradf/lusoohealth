@@ -1,0 +1,323 @@
+@font-face {
+    font-family: Mandisa;
+    src: url('./MandisaFont/MANDISA-Bold-BF64e2dee6524e0.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Mandisa;
+    src: url('./MandisaFont/MANDISA-Regular-BF64e2dee67b1a3.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mandisa';
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+
+.oustide-container {
+    display: flex;
+    border-radius: 20px;
+    border: 2px solid #7769af;
+    width: 80%;
+    margin: 50px auto 0 auto;
+    min-height: 200px;
+    background-color: #f7faf9;
+    flex-direction: column;
+}
+
+.title-line>figure {
+    min-width: 100px;
+    max-width: 100px;
+    /* margin-right: 50px; */
+}
+
+.title-line>figure img {
+    width: 100%;
+}
+
+.title-line {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    margin: 10px auto 0 auto;
+}
+
+.title-line:first-child {
+    font-size: 24px;
+    color: #7769af;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    width: 40px !important;
+    -moz-appearance: textfield;
+}
+
+label {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+select,
+option,
+input {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background: white;
+    color: black;
+}
+
+input {
+    padding: 8px;
+}
+
+select,
+option {
+    padding: 8px 30px 8px 8px;
+}
+
+.dropdowns>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-arrow {
+    border-radius: 0 8px 8px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: white;
+    height: 100%;
+    width: 30px;
+    pointer-events: none;
+}
+
+.custom-arrow img {
+    max-width: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
+#manage-options {
+    display: flex;
+    flex-direction: row;
+    width: 92%;
+    margin: 20px auto 10px auto;
+    justify-content: space-between;
+}
+
+.opcoes {
+    width: 3%;
+    min-width: 25px;
+}
+
+.opcoes:hover {
+    cursor: pointer;
+}
+
+#line {
+    width: 94%;
+    display: block;
+}
+
+.opcoes>img {
+    width: 100%;
+
+}
+
+.dropdowns {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0 auto;
+    width: 92%;
+}
+
+#add-hover,
+#remove-hover {
+    display: none;
+}
+
+#fields {
+    margin: 10px auto 40px auto;
+    width: 92%;
+}
+
+#price-taxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#price-taxes>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#price-taxes>div>label {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#price-taxes input {
+    font-size: 23px;
+    text-align: end;
+}
+
+#price {
+    background-color: #ebedec;
+}
+
+#last-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+#finprice-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#finprice {
+    text-align: end;
+    background-color: #70b148;
+    color: white;
+    font-size: 25px;
+}
+
+#finprice-div>label {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#buttons>input {
+    max-height: 50px;
+    font-size: 30px;
+    min-width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type=reset] {
+    background-color: #ebedec;
+    color: black;
+    margin-right: 20px;
+}
+
+input[type=reset]:hover {
+    background-color: #a0a0a0;
+}
+
+input[type=submit] {
+    background-color: #70b148;
+    color: white;
+    margin-right: 70px;
+}
+
+input[type=submit]:hover {
+    background-color: #4b8425;
+}
+
+.quantidades {
+    min-width: 50px;
+}
+
+@media only screen and (max-width: 1150px) {
+    .oustide-container {
+        width: 100%;
+    }
+
+    .dropdowns {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 40px auto 0 auto;
+        width: 92%;
+    }
+
+    .dropdowns>div {
+        margin-bottom: 10px;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .dropdowns>div input,
+    .dropdowns>div input {
+        min-width: 100%;
+    }
+
+    select, option, input {
+        width: 100%;
+    }
+
+    #line {
+        width: 85%;
+    }
+
+    #manage-options {
+        width: 85%;
+        margin: 20px auto 10px auto;
+        justify-content: space-between;
+    }
+
+    #price-taxes {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    #price-taxes > div {
+        margin-bottom: 10px;
+    }
+    #last-row {
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100px;
+    }
+
+    #finprice-div {
+        margin-bottom: 10px;
+    }
+    #buttons>input {
+        max-height: 50px;
+        font-size: 25px;
+        min-width: 130px;
+    }
+    
+    input[type=reset] {
+        margin-right: 10px;
+    }
+    
+    input[type=submit] {
+        margin: 0;
+    }
+}
